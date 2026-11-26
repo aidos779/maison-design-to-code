@@ -1,0 +1,32 @@
+Figma MCP · get_design_context
+Client: Codex Figma connector
+Frame: https://www.figma.com/design/ogOOwc2oKmdtGASQ8u9yyR?node-id=8-102
+Unmodified excerpt from the returned desktop reference code
+
+type ActionButtonProps = {
+  className?: string;
+  kind?: "Primary" | "Outline";
+  label?: string;
+  state?: "Default";
+};
+
+function ActionButton({ className, kind = "Primary", label = "Enquire", state = "Default" }: ActionButtonProps) {
+  const isOutlineAndDefault = kind === "Outline" && state === "Default";
+  return (
+    <div className={className || `content-stretch flex items-center justify-center px-[var(--space-22,22px)] py-[var(--space-13,13px)] relative rounded-[var(--radius-control,4px)] ${isOutlineAndDefault ? "border border-[var(--border-subtle,#d8dad1)] border-solid" : "bg-[var(--action-primary,#303d31)]"}`} id={isOutlineAndDefault ? "node-7_198" : "node-7_186"}>
+      {kind === "Primary" && state === "Default" && (
+        <p className="[word-break:break-word] font-['DM_Sans:Medium'] font-medium leading-[20px] relative shrink-0 text-[14px] text-[color:var(--surface-base,white)] whitespace-nowrap" data-node-id="7:187" style={{ fontVariationSettings: '"opsz" 14' }}>
+          {label}
+        </p>
+      )}
+      {isOutlineAndDefault && (
+        <p className="[word-break:break-word] font-['DM_Sans:Medium'] font-medium leading-[20px] relative shrink-0 text-[14px] text-[color:var(--text-primary,#242820)] whitespace-nowrap" data-node-id="7:199" style={{ fontVariationSettings: '"opsz" 14' }}>
+          {label}
+        </p>
+      )}
+    </div>
+  );
+}
+
+type DestinationTileProps = {
+  className?: string;

@@ -1,0 +1,42 @@
+<frame id="8:451" name="Landing / Tablet" x="2020" y="0" width="768" height="2370">
+  <instance id="8:600" name="Navigation" x="0" y="0" width="768" height="84" />
+  <frame id="8:459" name="Main content" x="0" y="84" width="768" height="2190">
+    <frame id="8:460" name="Hero / Villamartín" x="32" y="0" width="704" height="490" />
+    <instance id="8:612" name="Property search" x="32" y="490" width="704" height="158" />
+    <frame id="8:472" name="Featured residences" x="32" y="648" width="704" height="916">
+      <frame id="8:473" name="Collection heading" x="0" y="60" width="704" height="56">
+        <text id="8:474" name="Heading" x="0" y="0" width="318" height="56" />
+        <text id="8:475" name="Count" x="626" y="19" width="78" height="18" />
+      </frame>
+      <frame id="8:476" name="Property grid" x="0" y="142" width="704" height="774">
+        <instance id="8:477" name="Residence card" x="0" y="0" width="340" height="375" />
+        <instance id="8:478" name="Residence card" x="364" y="0" width="340" height="375" />
+        <instance id="8:479" name="Residence card" x="0" y="399" width="340" height="375" />
+      </frame>
+    </frame>
+    <frame id="8:480" name="Destinations" x="32" y="1564" width="704" height="404">
+      <frame id="8:481" name="Destination introduction" x="0" y="72" width="365" height="84">
+        <text id="8:482" name="Heading" x="0" y="0" width="365" height="56" />
+        <text id="8:483" name="Introduction" x="0" y="62" width="233" height="22" />
+      </frame>
+      <frame id="8:484" name="Destination grid" x="0" y="180" width="704" height="224">
+        <instance id="8:485" name="Destination tile" x="0" y="0" width="218.6666717529297" height="224" />
+        <instance id="8:486" name="Destination tile" x="242.6666717529297" y="0" width="218.66665649414062" height="224" />
+        <instance id="8:487" name="Destination tile" x="485.33331298828125" y="0" width="218.66665649414062" height="224" />
+      </frame>
+    </frame>
+    <frame id="8:488" name="Advisory section" x="32" y="1968" width="704" height="222">
+      <frame id="8:489" name="Private advisory" x="0" y="72" width="704" height="150">
+        <frame id="8:490" name="Advisory copy" x="40" y="36" width="333" height="78">
+          <text id="8:491" name="Service" x="0" y="0" width="120" height="16" />
+          <text id="8:492" name="Heading" x="0" y="22" width="333" height="56" />
+        </frame>
+        <instance id="8:493" name="Action button" x="484" y="51" width="180" height="48" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="8:494" name="Footer" x="0" y="2274" width="768" height="96">
+    <text id="8:495" name="Footer wordmark" x="32" y="32" width="120" height="32" />
+    <text id="8:496" name="Copyright" x="637" y="39" width="99" height="18" />
+  </frame>
+</frame>

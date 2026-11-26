@@ -1,0 +1,32 @@
+Figma MCP · get_design_context
+Client: Codex Figma connector
+Frame: https://www.figma.com/design/ogOOwc2oKmdtGASQ8u9yyR?node-id=5-3
+Unmodified excerpt from the returned desktop reference code
+
+type ButtonProps = {
+  className?: string;
+  kind?: "Primary" | "Outline";
+  label?: string;
+};
+
+function Button({ className, kind = "Primary", label = "Enquire" }: ButtonProps) {
+  const isOutline = kind === "Outline";
+  return (
+    <div className={className || `content-stretch flex items-center justify-center px-[22px] py-[13px] relative rounded-[4px] ${isOutline ? "border border-[var(--rule,#d8dad1)] border-solid" : "bg-[var(--moss,#303d31)]"}`} id={isOutline ? "node-4_5" : "node-4_3"}>
+      {kind === "Primary" && (
+        <p className="[word-break:break-word] font-['DM_Sans:Medium'] font-medium leading-[20px] relative shrink-0 text-[14px] text-[color:var(--surface,white)] whitespace-nowrap" data-node-id="4:4" style={{ fontVariationSettings: '"opsz" 14' }}>
+          {label}
+        </p>
+      )}
+      {isOutline && (
+        <p className="[word-break:break-word] font-['DM_Sans:Medium'] font-medium leading-[20px] relative shrink-0 text-[14px] text-[color:var(--ink,#242820)] whitespace-nowrap" data-node-id="4:6" style={{ fontVariationSettings: '"opsz" 14' }}>
+          {label}
+        </p>
+      )}
+    </div>
+  );
+}
+
+type DestinationCardProps = {
+  className?: string;
+  country?: string;

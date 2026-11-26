@@ -110,11 +110,11 @@ a {
 .button--primary:active {
   opacity: 0.8;
 }
-.button--outline:active {
-  background: var(--surface-quiet);
-}
 .button--outline:hover {
   background: var(--surface-base);
+}
+.button--outline:active {
+  background: var(--surface-quiet);
 }
 .hero {
   height: 490px;

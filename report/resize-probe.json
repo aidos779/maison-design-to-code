@@ -1,0 +1,14 @@
+{
+  "baseline": {
+    "parent": 1024,
+    "main": 1440,
+    "hero": 1312,
+    "nav": 1440
+  },
+  "iteration": {
+    "parent": 1024,
+    "main": 1024,
+    "hero": 896,
+    "nav": 1024
+  }
+}

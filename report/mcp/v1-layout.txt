@@ -1,0 +1,58 @@
+<frame id="5:3" name="Landing / Desktop" x="0" y="0" width="1440" height="1901">
+  <frame id="5:4" name="Navigation" x="0" y="0" width="1440" height="84">
+    <text id="5:5" name="Wordmark" x="64" y="26" width="120" height="32" />
+    <frame id="5:6" name="Site links" x="565" y="24" width="333" height="36">
+      <instance id="5:7" name="Navigation link" x="0" y="0" width="76" height="36" />
+      <instance id="5:9" name="Navigation link" x="110" y="0" width="83" height="36" />
+      <instance id="5:11" name="Navigation link" x="227" y="0" width="106" height="36" />
+    </frame>
+    <instance id="5:13" name="Button" x="1279" y="18" width="97" height="48" />
+  </frame>
+  <frame id="5:15" name="Main content" x="0" y="84" width="1440" height="1721">
+    <frame id="5:16" name="Hero / Villamartín" x="64" y="0" width="1312" height="490" />
+    <frame id="5:22" name="Property search" x="64" y="490" width="1312" height="88">
+      <frame id="5:23" name="Search controls" x="17" y="15" width="1278" height="58">
+        <instance id="5:24" name="Filter field" x="0" y="0" width="358.6666564941406" height="58" />
+        <instance id="5:30" name="Filter field" x="370.6666564941406" y="0" width="358.66668701171875" height="58" />
+        <instance id="5:36" name="Filter field" x="741.3333740234375" y="0" width="358.66668701171875" height="58" />
+        <instance id="5:42" name="Button" x="1112" y="6" width="166" height="46" />
+      </frame>
+    </frame>
+    <frame id="5:44" name="Featured residences" x="64" y="578" width="1312" height="517">
+      <frame id="5:45" name="Collection heading" x="0" y="60" width="1312" height="56">
+        <text id="5:46" name="Heading" x="0" y="0" width="318" height="56" />
+        <text id="5:47" name="Count" x="1234" y="19" width="78" height="18" />
+      </frame>
+      <frame id="5:48" name="Property grid" x="0" y="142" width="1312" height="375">
+        <instance id="5:49" name="Property card" x="0" y="0" width="421.3333435058594" height="375" />
+        <instance id="5:56" name="Property card" x="445.3333435058594" y="0" width="421.3333435058594" height="375" />
+        <instance id="5:63" name="Property card" x="890.6666870117188" y="0" width="421.3333435058594" height="375" />
+      </frame>
+    </frame>
+    <frame id="5:70" name="Destinations" x="64" y="1095" width="1312" height="404">
+      <frame id="5:71" name="Destination introduction" x="0" y="72" width="365" height="84">
+        <text id="5:72" name="Heading" x="0" y="0" width="365" height="56" />
+        <text id="5:73" name="Introduction" x="0" y="62" width="233" height="22" />
+      </frame>
+      <frame id="5:74" name="Destination grid" x="0" y="180" width="1312" height="224">
+        <instance id="5:75" name="Destination card" x="0" y="0" width="421.3333435058594" height="224" />
+        <instance id="5:80" name="Destination card" x="445.3333435058594" y="0" width="421.3333435058594" height="224" />
+        <instance id="5:85" name="Destination card" x="890.6666870117188" y="0" width="421.3333435058594" height="224" />
+      </frame>
+    </frame>
+    <frame id="5:90" name="Advisory section" x="64" y="1499" width="1312" height="222">
+      <frame id="5:91" name="Private advisory" x="0" y="72" width="1312" height="150">
+        <frame id="5:92" name="Advisory copy" x="40" y="36" width="333" height="78">
+          <text id="5:93" name="Service" x="0" y="0" width="120" height="16" />
+          <text id="5:94" name="Heading" x="0" y="22" width="333" height="56" />
+        </frame>
+        <instance id="5:95" name="Button" x="1092" y="51" width="180" height="48" />
+      </frame>
+    </frame>
+  </frame>
+  <frame id="5:97" name="Footer" x="0" y="1805" width="1440" height="96">
+    <text id="5:98" name="Footer wordmark" x="64" y="32" width="120" height="32" />
+    <text id="5:99" name="Copyright" x="1277" y="39" width="99" height="18" />
+  </frame>
+</frame>
+IMPORTANT: After you call this tool, you MUST call get_design_context if trying to implement the design, since this tool only returns metadata. If you do not call get_design_context, the agent will not be able to implement the design.

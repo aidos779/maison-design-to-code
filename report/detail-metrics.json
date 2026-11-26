@@ -1,0 +1,34 @@
+{
+  "1": {
+    "headingElementWidth": 1252,
+    "headingTextWidth": 371.234375,
+    "captionLeft": 1219.234375,
+    "captionRightInset": 54,
+    "buttonOutline": [
+      "1px",
+      "solid",
+      "rgb(36, 40, 32)"
+    ],
+    "border": [
+      "1px",
+      "rgb(216, 218, 209)"
+    ],
+    "font": "\"Instrument Serif\", Georgia, serif"
+  },
+  "2": {
+    "headingElementWidth": 371.234375,
+    "headingTextWidth": 371.234375,
+    "captionLeft": 1231.234375,
+    "captionRightInset": 42,
+    "buttonOutline": [
+      "3px",
+      "none",
+      "rgb(36, 40, 32)"
+    ],
+    "border": [
+      "1px",
+      "rgb(216, 218, 209)"
+    ],
+    "font": "\"Instrument Serif\", Georgia, serif"
+  }
+}

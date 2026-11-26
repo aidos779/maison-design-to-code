@@ -1,0 +1,19 @@
+# V1 design-to-code comparison
+
+Desktop measurements use a 1440 px viewport unless specified. Bounds are CSS or Figma pixels. Computed styles, DOM measurements, Figma frame measurements and same-size screenshot metrics are included in this directory.
+
+| Criterion | Expected Figma result | Actual generated result | Identified difference | Possible reason | Proposed improvement |
+|---|---|---|---|---|---|
+| Color | Page #FAF9F6. Ink #242820. | Same computed page and text RGB. | 0 channel steps. | Both use the seven baseline colors. | Keep the values and name their UI roles. |
+| Type family | Instrument Serif display. DM Sans interface. | Both families load from local WOFF2 files. | Font families agree. | Local assets give Chrome the intended families. | Keep local font packages and lockfiles. |
+| Size and weight | Headline 84/88 px, 400. Action label 14/20 px, 500. | Computed sizes, line heights and weights agree. | No metric change. | MCP returned explicit text styles. | Expose the same roles as CSS type tokens. |
+| Title bounds | Desktop headline layer width 373 px. | Element 1252 px. Glyph range 371.23 px. | Element is 879 px wider. Glyph range is 1.77 px narrower. | The CSS grid stretches its child. Font shaping also varies. | Align the title to the start of its grid cell. |
+| Spacing | 64 px gutter. Search padding 14 px vertical, 16 px horizontal. | 64, 14 and 16 px respectively. | Target values agree. | Baseline CSS uses literal dimensions. | Bind repeated spacing to named variables. |
+| Component size | Search action 166 × 46 px. | 165.77 × 46 px. | About 0.23 px in width. | The button hugs text in both engines. | Keep intrinsic sizing and compare with subpixel tolerance. |
+| Alignment | Hero location ends 42 px from the right edge. | Browser inset 54 px. | Caption is 12 px too far left. | Implementation estimated the inset from a positioned layer. | Use the measured 42 px inset and anchor to the right. |
+| Radius and stroke | 4 px action radius. Outline action has one 1 px border. | 4 px radius and 1 px border plus a solid 1 px outline. | Extra dark stroke on the unfocused button. | The class name “outline” also activates a Tailwind utility. | Scope the variant class and retain keyboard focus styling. |
+| Image proportions | First photo 421.33 × 250 px. Crop fills the frame. | 421.33 × 250 px after rounding, object-fit cover. | Crop geometry agrees at 1440 px. | The code uses the source JPEG and matching crop rules. | Keep the source and compare tablet crops separately. |
+| Responsive layout | 1440 and 390 px authored. At 1024 px the design copy keeps a 1440 px main frame. | No overflow at 320, 390, 768 or 1440 px. Tablet cards are 222.55 px wide. | Figma resizing and the browser diverge between authored sizes. | Several initial section widths are fixed. Tablet rules were inferred. | Set sections to fill and author the 768 px layout. |
+| Component reuse | 18 desktop instances including links, fields, actions and cards. | One typed property-card renderer maps three records. Search and navigation have React components. | Design lacks main components for the complete search and navigation. | V1 groups instances into section frames. | Create matching Figma section components with layout variants. |
+| Code organization | Named sections communicate the page hierarchy. | Eight local UI functions plus App share App.tsx. Data is separate. | Section boundaries exist inside one module. | The small first implementation kept UI functions together. | Give navigation, search and reusable UI dedicated modules. |
+| Design tokens | Seven bound color variables. Desktop context also returns eight text styles. | Seven palette CSS variables. Sizes and gaps are largely literal. | No shared numeric binding for spacing or radius. | The baseline file exposes numeric literals. | Add semantic aliases, numeric variables and CSS code syntax. |

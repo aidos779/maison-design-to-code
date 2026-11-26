@@ -1,0 +1,38 @@
+{
+  "v1-desktop": {
+    "width": 1440,
+    "height": 1901,
+    "meanAbsoluteRgbError": 2.266,
+    "pixelsWithin12EachChannelPct": 95.22
+  },
+  "v1-mobile": {
+    "width": 390,
+    "height": 3233,
+    "meanAbsoluteRgbError": 3.055,
+    "pixelsWithin12EachChannelPct": 93.11
+  },
+  "v2-desktop": {
+    "width": 1440,
+    "height": 1901,
+    "meanAbsoluteRgbError": 2.195,
+    "pixelsWithin12EachChannelPct": 95.25
+  },
+  "v2-mobile": {
+    "width": 390,
+    "height": 3233,
+    "meanAbsoluteRgbError": 2.984,
+    "pixelsWithin12EachChannelPct": 93.15
+  },
+  "v2-tablet": {
+    "width": 768,
+    "height": 2370,
+    "meanAbsoluteRgbError": 2.537,
+    "pixelsWithin12EachChannelPct": 94.64
+  },
+  "reverse-desktop": {
+    "width": 1440,
+    "height": 1901,
+    "meanAbsoluteRgbError": 2.164,
+    "pixelsWithin12EachChannelPct": 95.27
+  }
+}
