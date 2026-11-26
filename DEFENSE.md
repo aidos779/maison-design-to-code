@@ -1,6 +1,6 @@
 # MAISON · Defense preparation / Подготовка к защите
 
-Use the two frames, the comparison board and the browser measurements for a live demonstration. The answers distinguish the verified connector run from the VS Code chat trial.
+For a live demonstration, open the V2 desktop frame beside the [VS Code tool call](screenshots/mcp-setup/06-vscode-tool-input.png) and [Copilot’s answer](screenshots/mcp-setup/05-vscode-copilot-result.png). Use the comparison board and browser measurements to explain what changed between versions.
 
 ## 1. What is Figma MCP?
 
@@ -16,9 +16,9 @@ Use the two frames, the comparison board and the browser measurements for a live
 
 ## 3. Which connection produced the implementation evidence?
 
-**EN** The official Figma connector in Codex returned both versions’ design context, screenshots, layout metadata and variables. VS Code was configured and tested separately. Its chat request returned model_not_supported.
+**EN** The official Figma connector in Codex supplied design context, screenshots, layout metadata and variables for both builds. I verified the same remote service in VS Code 1.148.0. Copilot read frame `8:102` and returned “A place apart.” and the three residence names.
 
-**RU · Через какое подключение получены данные для реализации?** Официальный коннектор Figma в Codex вернул контекст обеих версий, снимки, размеры и переменные. Подключение в VS Code проверялось отдельно. Запрос в чате вернул model_not_supported.
+**RU · Через какое подключение получены данные для реализации?** Контекст обеих версий, снимки, размеры и переменные получены через официальный коннектор Figma в Codex. Тот же сервер проверен в VS Code 1.148.0. Copilot прочитал фрейм `8:102` и вернул заголовок «A place apart.» и названия трёх объектов.
 
 ## 4. What does a frame link identify?
 

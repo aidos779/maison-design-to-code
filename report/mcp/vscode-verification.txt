@@ -1,0 +1,22 @@
+VS Code 1.148.0 · GitHub Copilot · 26 November 2026
+Workspace server: figma
+Transport: HTTP
+Endpoint: https://mcp.figma.com/mcp
+
+Exact prompt sent in Copilot Chat:
+Use the Figma MCP tool #get_design_context to inspect https://www.figma.com/design/ogOOwc2oKmdtGASQ8u9yyR?node-id=8-102 . Return the hero headline and the names of the three residence cards from the tool response. Use only this Figma frame. Do not read or change workspace files.
+
+Observed tool card:
+Get Design Context – figma (MCP Server)
+fileKey: ogOOwc2oKmdtGASQ8u9yyR
+nodeId: 8:102
+
+Completed Copilot answer:
+Hero headline: “A place apart.”
+Residence cards: Casa de los Pinos, Chalet Saanen, and Alfama Residence.
+
+Full-window captures:
+screenshots/mcp-setup/05-vscode-copilot-result.png
+screenshots/mcp-setup/06-vscode-tool-input.png
+
+The earlier VS Code 1.104.1 session reported model_not_supported. After Figma authorization its discovery log recorded 51 tools and omitted all 51 for invalid JSON schemas. The successful run above used the updated editor and the same workspace MCP configuration.
