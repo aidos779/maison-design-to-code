@@ -1,0 +1,96 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #faf9f6; --ink: #242820; --muted: #595e54; --rule: #d8dad1;
+  --surface: #fff; --moss: #303d31; --tint: #ecefe7;
+  --gutter: clamp(24px, 4.45vw, 64px);
+  font-family: "DM Sans", sans-serif; color: var(--ink); background: var(--paper);
+  font-size: 15px; line-height: 22px;
+}
+body {margin: 0}
+.site {max-width: 1680px; margin: auto}
+button, a, select {cursor: pointer}
+a {text-decoration: none; color: inherit}
+:focus-visible {outline: 2px solid #56754a; outline-offset: 4px}
+.skip {position: absolute; top: -100px; z-index: 5; padding: 12px; background: var(--surface)}
+.skip:focus {top: 0}
+.wrap,.masthead,.footer {padding-inline: var(--gutter)}
+.masthead {height: 84px; position: relative; z-index: 2}
+.wordmark {font-weight: 500; font-size: 26px; line-height: 32px; letter-spacing: 4px}
+.desktop-links {display: flex; gap: 34px}
+.desktop-links a,.menu-toggle,.mobile-links {font-weight: 500; font-size: 14px; line-height: 20px}
+.desktop-links a:hover,.menu-toggle:hover,.card-action:hover .card-title,.destination-card:hover .card-title {text-decoration: underline; text-underline-offset: 4px}
+.menu-toggle,.mobile-copy {display: none}
+.button {width: fit-content; display: inline-flex; justify-content: center; align-items: center; border-radius: 4px; padding: 13px 22px; font-weight: 500; font-size: 14px; line-height: 20px}
+.primary {background: var(--moss); color: var(--surface)}
+.primary:hover {background: var(--ink)}
+.outline {border: 1px solid var(--rule); color: var(--ink)}
+.outline:hover {background: var(--surface)}
+.hero {height: 490px; position: relative; isolation: isolate; color: var(--surface); background: linear-gradient(to bottom,rgba(15,20,18,.04),rgba(10,17,14,.67)),url('/images/hero.jpg') center / cover}
+.hero-message {position: absolute; top: 282px; left: 40px; right: 20px; display: grid; gap: 8px}
+h1,h2,.card-title {font-family: 'Instrument Serif', Georgia, serif; font-weight: 400}
+h1 {font-size: 84px; line-height: 88px; letter-spacing: -1px}
+h2 {font-size: 48px; line-height: 56px}
+.eyebrow {font-size: 11px; line-height: 16px; font-weight: 500; text-transform: uppercase; letter-spacing: 1.5px; color: var(--muted)}
+.hero .eyebrow {color: inherit}
+.photo-location {position: absolute; right: 54px; bottom: 14px; font-size: 13px; line-height: 18px}
+.property-search {border: 1px solid var(--rule); background: var(--surface); padding: 14px 16px; display: flex; align-items: center; gap: 12px}
+.filter-field {height: 58px; min-width: 0; flex: 1; position: relative; padding: 7px 16px; display: flex; flex-direction: column; justify-content: center; gap: 3px}
+.filter-field select {appearance: none; width: 100%; padding: 25px 38px 6px 16px; position: absolute; inset: 0; background: url('/images/chevron.svg') right 16px center / 14px 14px no-repeat; color: var(--ink); border: 0; border-radius: 0; font: inherit}
+.filter-field .eyebrow {position: absolute; top: 8px; pointer-events: none}
+.collection {padding-top: 60px}
+.collection-heading {margin-bottom: 26px}
+.caption {font-size: 13px; line-height: 18px; color: var(--muted)}
+.cards-grid,.destination-grid {display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 24px}
+.card-action,.destination-card {display: block; width: 100%; text-align: left}
+.property-photo,.destination-photo {width: 100%; height: 250px; object-fit: cover; display: block}
+.card-details {margin-top: 16px; display: grid; gap: 5px}
+.card-title {font-size: 32px; line-height: 40px}
+.specs {white-space: pre-wrap}
+.price {font-size: 14px; line-height: 20px; font-weight: 500}
+.destinations {padding-top: 72px}
+.destination-intro {margin-top: 6px; color: var(--muted)}
+.destination-grid {margin-top: 24px}
+.destination-photo {height: 172px}
+.destination-label {margin-top: 12px}
+.advisory {margin-top: 72px; padding: 36px 40px; display: flex; align-items: center; justify-content: space-between; gap: 16px; background: var(--tint)}
+.advisory h2 {margin-top: 6px}
+.footer {padding-block: 32px}
+.reset {margin: 0 0 18px; text-decoration: underline}
+.empty {padding-block: 20px}
+dialog {position: fixed; inset: 0; width: min(480px,calc(100vw - 32px)); margin: auto; max-height: 88dvh; border: 1px solid var(--rule); color: var(--ink); background: var(--paper); border-radius: 5px}
+dialog::backdrop {background: rgb(16 22 18 / .6)}
+.dialog-body {padding: 26px; display: grid; gap: 12px}
+.dialog-close {justify-self: end; text-decoration: underline; font-size: 14px}
+.detail-photo {width: 100%; height: 180px; object-fit: cover}
+.enquiry-form,.enquiry-form label {display: grid; gap: 12px}
+textarea {width: 100%; border: 1px solid var(--rule); background: white; padding: 10px; resize: vertical}
+@media (min-width: 701px) and (max-width: 1000px) {
+  .property-search {display: grid; grid-template-columns: repeat(2,minmax(0,1fr))}
+  .property-search .button {width: 100%}
+  .cards-grid,.destination-grid {gap: 16px}
+  .property-photo {height: 190px}
+  .destination-photo {height: 140px}
+  .desktop-links {gap: 18px}
+}
+@media (max-width: 700px) {
+  :root {--gutter: 20px}
+  .masthead {height: 70px}
+  .menu-toggle,.mobile-copy {display: inline}
+  .desktop-links,.desktop-action,.desktop-copy,.result-count {display: none}
+  .mobile-links {position: absolute; inset: 100% 0 auto; padding: 20px; display: grid; gap: 18px; background: var(--paper); border-bottom: 1px solid var(--rule)}
+  .mobile-links button {text-align: left}
+  .hero {height: 416px}
+  .hero-message {top: 250px; left: 22px; right: 12px}
+  h1 {font-size: 60px; line-height: 64px}
+  h2 {font-size: 40px; line-height: 46px}
+  .photo-location {left: 22px; right: auto}
+  .property-search {padding: 12px; display: grid; gap: 4px}
+  .property-search .button {width: 100%}
+  .collection {padding-top: 44px}
+  .collection-heading {margin-bottom: 20px}
+  .cards-grid,.destination-grid {grid-template-columns: 1fr; gap: 30px}
+  .destinations {padding-top: 48px}
+  .advisory {margin-top: 48px; padding: 28px 24px; align-items: flex-start; flex-direction: column}
+  .footer {padding-block: 24px}
+}
