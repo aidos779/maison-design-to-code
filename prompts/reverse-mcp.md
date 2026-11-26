@@ -1,0 +1,1 @@
+Capture the running, default-state V2 landing page at 1440 × 900 into the existing MAISON Figma Design file, on 05_Reverse_MCP. Use the official live-page capture workflow. Inspect the result for editable text, frames, Auto Layout, instances, naming and visual fidelity. Keep its original import structure for evaluation.
